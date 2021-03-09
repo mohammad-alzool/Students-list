@@ -5,8 +5,8 @@ let studentEmail = document.getElementById('email');
 let studentNumber = document.getElementById('mobilenumber');
 let studentTuition = document.getElementById('Tuition');
 let studentTable = document.getElementById('table');
-let id = 0;
-let evLi = document.getElementById('form')
+let idNumber = 0;
+let evLi = document.getElementById('form');
 
 
 function Students (email, mobilenumber, age, tuition) {
@@ -22,12 +22,12 @@ Students.prototype.renderstudent = function() {
   this.email=studentEmail;
   this.mobilenumber=studentNumber;
   this.tuition=studentTuition;
-  id+=1;
+  idNumber+=1;
 
   let tableRow=document.createElement('tr');
   let idData=document.createElement('td');
   tableRow.appendChild.idData;
-  idData.innerText= id ;
+  idData.innerText= idNumber ;
 
   let nameData=document.createElement('td');
   tableRow.appendChild.nameData;
@@ -52,8 +52,7 @@ Students.prototype.renderstudent = function() {
 };
 
 evLi.addEventListener('click',Students.renderstudent);
-function newstudent()
-
+// function newstudent(){};
 
 function ageGen (){
   let age=Math.floor((Math.random() * 50) + 18);
@@ -66,28 +65,28 @@ function creatHeaderTable(){
   studentTable.appendChild.headerTable;
 
   let id=document.createElement('th');
-  headerTable.appendChild.id;
   id.innerText='id';
+  headerTable.appendChild.id;
 
   let stName=document.createElement('th');
-  headerTable.appendChild.stName;
   stName.innerText='Name';
+  headerTable.appendChild.stName;
 
   let email=document.createElement('th');
-  headerTable.appendChild.email;
   email.innerText='Email';
+  headerTable.appendChild.email;
 
   let mobile=document.createElement('th');
-  headerTable.appendChild.mobile;
   mobile.innerText='Mobile';
+  headerTable.appendChild.mobile;
 
   let age=document.createElement('th');
-  headerTable.appendChild.age;
   age.innerText='Age';
+  headerTable.appendChild.age;
 
   let tuition=document.createElement('th');
-  headerTable.appendChild.tuition;
   tuition.innerText='tuition';
+  headerTable.appendChild.tuition;
 
 
 
